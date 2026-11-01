@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">Pixel art space banner</title>
+  <desc id="desc">A pixel art night sky with stars, a crescent planet, and a small rocket.</desc>
+  <rect width="1200" height="280" fill="#070b1f"/>
+  <rect y="210" width="1200" height="70" fill="#0b102b"/>
+  <g fill="#dbeafe">
+    <rect x="80" y="42" width="4" height="4"/><rect x="160" y="118" width="3" height="3"/><rect x="245" y="61" width="5" height="5"/>
+    <rect x="342" y="156" width="4" height="4"/><rect x="420" y="35" width="3" height="3"/><rect x="530" y="92" width="4" height="4"/>
+    <rect x="650" y="48" width="5" height="5"/><rect x="755" y="145" width="3" height="3"/><rect x="865" y="74" width="4" height="4"/>
+    <rect x="1010" y="39" width="3" height="3"/><rect x="1110" y="132" width="5" height="5"/>
+  </g>
+  <g fill="#38bdf8"><rect x="122" y="178" width="4" height="4"/><rect x="930" y="164" width="4" height="4"/><rect x="1080" y="86" width="3" height="3"/></g>
+  <g transform="translate(860 55)">
+    <rect x="34" y="0" width="48" height="4" fill="#c4b5fd"/><rect x="26" y="4" width="64" height="8" fill="#c4b5fd"/>
+    <rect x="18" y="12" width="80" height="12" fill="#a78bfa"/><rect x="10" y="24" width="96" height="18" fill="#8b5cf6"/>
+    <rect x="2" y="42" width="112" height="26" fill="#6d28d9"/><rect x="10" y="68" width="96" height="14" fill="#4c1d95"/>
+    <rect x="26" y="82" width="64" height="8" fill="#312e81"/><rect x="34" y="90" width="48" height="4" fill="#1e1b4b"/>
+    <rect x="38" y="28" width="20" height="20" fill="#fef3c7"/><rect x="62" y="28" width="20" height="20" fill="#fde68a"/>
+  </g>
+  <g transform="translate(180 152)">
+    <path d="M0 48h20v-8h12V28h8V12h8V0h20v12h8v16h8v12h12v8h20v12H0z" fill="#f8fafc"/>
+    <rect x="48" y="20" width="20" height="20" fill="#38bdf8"/><rect x="54" y="26" width="8" height="8" fill="#0f172a"/>
+    <path d="M32 60h16v12H32zM68 60h16v12H68z" fill="#f97316"/><path d="M48 72h20v12H48z" fill="#facc15"/>
+  </g>
+  <g fill="#64748b"><rect x="0" y="252" width="1200" height="4"/><rect x="40" y="236" width="72" height="8"/><rect x="1020" y="232" width="96" height="8"/></g>
+  <text x="54" y="70" fill="#e0e7ff" font-family="monospace" font-size="22" letter-spacing="4">ROHAN PUROHIT // DEVELOPER IN ORBIT</text>
+  <text x="56" y="104" fill="#38bdf8" font-family="monospace" font-size="13" letter-spacing="2">AI · ML · GRAPHICS · EXPERIENCES</text>
+</svg>
