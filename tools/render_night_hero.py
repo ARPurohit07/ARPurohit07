@@ -1,4 +1,4 @@
-"""A hand-drawn pixel landscape with a small stargazer and looping night sky.
+"""A hand-drawn pixel landscape with a fishing sprite and looping night sky.
 
 Render at 400x150, then enlarge exactly 2x to preserve crisp pixel edges.
 Requires Pillow. There is deliberately no text in the artwork.
@@ -38,7 +38,8 @@ def landscape():
     d.rectangle((78,25,81,28),fill='#A396CE')
     d.rectangle((86,35,91,39),fill='#A396CE')
     d.rectangle((76,37,79,39),fill='#A396CE')
-    d.line((77,23,87,23),fill='#E5DAFF')
+    d.line((77,23,87,23),fill='#D9E8FF')
+    d.line((73,25,71,30),fill='#9ABFF1')
 
     # Distant lavender clouds and two overlapping mountain ridges.
     for x,y,l in [(16,60,40),(215,44,42),(287,64,50),(130,71,34)]:
@@ -48,20 +49,20 @@ def landscape():
                (180,75),(207,83),(244,57),(279,85),(304,68),(340,92),(374,74),(400,90),(400,120),(0,120)],fill='#3F315B')
     d.polygon([(49,73),(68,56),(87,76),(73,67),(68,69),(64,64)],fill='#76628F')
     d.polygon([(227,73),(244,57),(262,74),(249,67),(244,70),(240,65)],fill='#76628F')
-    d.line([(68,57),(62,65),(57,69),(53,75)],fill='#A397B6')
-    d.line([(244,58),(238,67),(233,71)],fill='#A397B6')
+    d.line([(68,57),(62,65),(57,69),(53,75)],fill='#92A8D4')
+    d.line([(244,58),(238,67),(233,71)],fill='#92A8D4')
     d.polygon([(0,95),(40,88),(77,98),(107,82),(145,100),(179,91),(217,102),
                (256,86),(295,102),(330,89),(368,100),(400,91),(400,120),(0,120)],fill='#251D3D')
     for x in range(0,405,9):
         tree(d,x,105+rng.randrange(-3,4),rng.randrange(10,21),'#1A172C')
 
     # Lake and distant shoreline.
-    d.rectangle((0,106,400,137),fill='#131426')
-    d.line((0,106,400,106),fill='#514165')
-    d.line((106,107,177,107),fill='#332840')
-    d.line((207,108,263,108),fill='#332840')
+    d.rectangle((0,106,400,137),fill='#10192D')
+    d.line((0,106,400,106),fill='#52658B')
+    d.line((106,107,177,107),fill='#2B3D61')
+    d.line((207,108,263,108),fill='#2B3D61')
     for x,y,l in [(15,111,24),(137,110,37),(233,117,27),(175,128,48),(32,124,28),(341,113,37)]:
-        d.line((x,y,x+l,y),fill='#28223D')
+        d.line((x,y,x+l,y),fill='#233455')
 
     # Tiny lakeside cabin and its warm windows.
     d.rectangle((41,98,65,108),fill='#322535')
@@ -80,7 +81,7 @@ def landscape():
                (199,138),(228,134),(265,132),(285,125),(308,124),(319,120),
                (337,119),(348,124),(371,120),(400,118),(400,150),(0,150)],fill='#080A17')
     d.line([(265,132),(285,125),(308,124),(319,120),(337,119),(348,124)],fill='#665078',width=1)
-    d.line([(281,127),(292,126),(298,126)],fill='#A396B4')
+    d.line([(281,127),(292,126),(298,126)],fill='#8CAAD2')
     d.line([(332,121),(339,122),(343,124)],fill='#A396B4')
     d.line([(298,128),(307,127),(310,129)],fill='#30263F')
     for x,y,size in [(10,132,52),(24,135,37),(389,130,57),(373,133,39)]:
@@ -101,7 +102,7 @@ for frame in range(N):
         if base.getpixel((x,y)) not in sky_colors:
             continue
         value = (cos((frame+phase)*2*pi/N)+1)/2
-        color = '#E4DDF9' if value>.86 else '#9A87C1' if value>.42 else '#4D416B'
+        color = '#DCEBFF' if value>.86 else '#9A9ED5' if value>.42 else '#4D416B'
         d.point((x,y),fill=color)
         if large and value>.86:
             d.line((x-1,y,x+1,y),fill=color)
@@ -111,18 +112,41 @@ for frame in range(N):
     for j,(y,offset,half) in enumerate([(109,-1,3),(112,2,5),(115,-4,4),(118,1,7),
                                       (122,-3,6),(126,4,9),(130,-1,8)]):
         x = 82 + offset + round(sin(frame*2*pi/N+j)*2)
-        shade = '#514267' if (frame//8+j)%3 else '#75618B'
+        shade = '#465D83' if (frame//8+j)%3 else '#849FD0'
         d.line((x-half,y,x-2,y),fill=shade)
         d.line((x+1,y,x+half//2,y),fill=shade)
-        d.point((x+half,y+1),fill='#3D324E')
+        d.point((x+half,y+1),fill='#30466A')
 
-    # A seated stargazer in a pale hoodie, looking left over the lake.
+    # Fishing line, float and small expanding ripples, drawn on the lake.
+    bob = round(sin(frame*2*pi/N)*1.2)
+    rod_lift = 1 if 18 <= frame < 30 else 0
+    tip_x, tip_y = 286, 91-rod_lift
+    float_x, float_y = 278, 119+bob
+    d.line([(315,111),(307,99),(296,91-rod_lift),(tip_x,tip_y)],fill='#A4B6D5')
+    d.line([(315,111),(310,104)],fill='#796193',width=2)
+    d.line([(tip_x,tip_y),(283,103),(float_x,float_y-2)],fill='#6685B0')
+    ripple = 2 + (frame//6)%4
+    ripple_color = '#45658B' if ripple < 4 else '#2A4161'
+    d.line((float_x-ripple,float_y+2,float_x-2,float_y+2),fill=ripple_color)
+    d.line((float_x+2,float_y+2,float_x+ripple,float_y+2),fill=ripple_color)
+    d.point((float_x-ripple-1,float_y+1),fill='#304F75')
+    d.rectangle((float_x,float_y-2,float_x+1,float_y-1),fill='#C4B5FD')
+    d.rectangle((float_x,float_y,float_x+1,float_y+1),fill='#7DBEFA')
+    # A faint fish passes beneath the surface, turning back in the loop.
+    fish_x = 226 + round(sin(frame*2*pi/N)*12)
+    facing = 1 if cos(frame*2*pi/N)>0 else -1
+    d.line((fish_x-2,123,fish_x+2,123),fill='#29476D')
+    d.point((fish_x-3*facing,122),fill='#29476D')
+    d.point((fish_x-3*facing,124),fill='#29476D')
+
+    # A seated fisher in a pale hoodie, hands wrapped around the rod.
     d.rectangle((320,108,326,115),fill='#81709C')
     d.rectangle((319,108,324,111),fill='#B5A7CB')
     d.polygon([(318,101),(322,101),(324,103),(324,107),(319,108),(317,106),(317,103)],fill='#BAACD0')
     d.line((319,101,322,101),fill='#DFD5EC')
     d.rectangle((317,104,319,106),fill='#6E597D')
-    d.line([(320,111),(317,113),(315,113)],fill='#C4B5DD')
+    d.line([(320,110),(317,111),(314,111)],fill='#BBD1ED',width=2)
+    d.point((314,110),fill='#E0D0DF')
     d.polygon([(319,114),(325,115),(324,118),(319,117),(316,115),(314,116),(314,120),(312,120),(312,114),(315,112)],fill='#625771')
     d.line([(314,113),(317,114),(320,116)],fill='#A89ABB')
     d.rectangle((312,120,316,121),fill='#A89ABB')
