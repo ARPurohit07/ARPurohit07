@@ -1,29 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160" width="800" height="160" role="img" aria-labelledby="t d">
-  <title id="t">GoodFlow workflow conversion illustration</title>
-  <desc id="d">A three-step workflow image passes through a local model and becomes a graph with editable nodes and a selection outline.</desc>
-  <rect width="800" height="160" fill="#100C1A"/>
-  <g stroke-width="2" fill="none">
-    <rect x="30" y="26" width="174" height="108" rx="4" fill="#E7E1EF" stroke="#B5A8C6"/>
-    <g stroke="#776A88" fill="#F9F7FC">
-      <path d="M116 56v17m0 18v18"/>
-      <rect x="83" y="39" width="66" height="18"/>
-      <path d="m116 70 24 13-24 13-24-13z"/>
-      <rect x="83" y="109" width="66" height="15"/>
-    </g>
-    <path d="M228 80h62m-9-8 9 8-9 8" stroke="#A78BFA"/>
-    <rect x="315" y="49" width="145" height="62" rx="6" fill="#231634" stroke="#A78BFA"/>
-    <path d="M332 68h90M332 80h57M332 92h76" stroke="#C4B5FD" stroke-width="3"/>
-    <path d="M482 80h62m-9-8 9 8-9 8" stroke="#A78BFA"/>
-    <g stroke="#A78BFA" fill="#21152F">
-      <path d="M665 49v22m0 20v21"/>
-      <rect x="623" y="27" width="84" height="22"/>
-      <path d="m665 68 28 15-28 15-28-15z"/>
-      <rect x="623" y="112" width="84" height="21"/>
-      <rect x="617" y="21" width="96" height="34" stroke-dasharray="3 3" fill="none"/>
-    </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="208" viewBox="0 0 800 208" role="img" aria-labelledby="title desc">
+  <title id="title">GoodFlow: screenshot to editable diagram</title>
+  <desc id="desc">Conceptual illustration, not an application screenshot. A workflow image passes through a local model, represented by a pixel chip, and becomes the same connected diagram with a selected editable node.</desc>
+  <defs>
+    <linearGradient id="night" x2="0" y2="1">
+      <stop stop-color="#171129"/><stop offset="1" stop-color="#0D0B1C"/>
+    </linearGradient>
+    <linearGradient id="paper" x2="0" y2="1">
+      <stop stop-color="#D9CFF2"/><stop offset="1" stop-color="#B6A5D5"/>
+    </linearGradient>
+  </defs>
+  <path d="M8 0H792V8H800V200H792V208H8V200H0V8H8Z" fill="url(#night)"/>
+  <path d="M16 1H784M1 16V192M799 16V192M16 207H784" fill="none" stroke="#36274E"/>
+
+  <!-- Sparse square stars echo the hero without adding visual noise. -->
+  <g fill="#71608F" shape-rendering="crispEdges">
+    <path d="M28 22h2v2h-2zM278 28h2v2h-2zM516 150h2v2h-2zM774 44h2v2h-2zM306 146h2v2h-2z"/>
+    <path d="M490 28h2v6h-2zM488 30h6v2h-6z" fill="#A590CC"/>
   </g>
-  <g fill="#C4B5FD">
-    <rect x="614" y="18" width="6" height="6"/><rect x="710" y="18" width="6" height="6"/>
-    <rect x="614" y="51" width="6" height="6"/><rect x="710" y="51" width="6" height="6"/>
+
+  <!-- Abstract workflow image; no invented application chrome. -->
+  <path d="M52 34H232V42H240V158H60V150H52Z" fill="#21182F"/>
+  <path d="M44 28H228V36H236V152H52V144H44Z" fill="url(#paper)"/>
+  <path d="M52 28H228V36H236M44 36V144H52" fill="none" stroke="#E9DFFA" stroke-width="2"/>
+  <g stroke="#6D5689" stroke-width="2" fill="none">
+    <path d="M140 68V80M140 108V116H100V124M140 116H180V124"/>
+    <path d="M136 76l4 4 4-4M96 120l4 4 4-4M176 120l4 4 4-4"/>
+  </g>
+  <g fill="#F0E9FA" stroke="#6D5689" stroke-width="2">
+    <rect x="110" y="48" width="60" height="20"/>
+    <path d="m140 80 22 14-22 14-22-14Z"/>
+    <rect x="76" y="124" width="48" height="16"/>
+    <rect x="156" y="124" width="48" height="16"/>
+  </g>
+
+  <!-- Stepped arrows and a pixel chip communicate local computation. -->
+  <g fill="none" stroke="#A98ADC" stroke-width="2">
+    <path d="M260 94H324M316 86h4v4h4v8h-4v4h-4"/>
+    <path d="M476 94H540M532 86h4v4h4v8h-4v4h-4"/>
+  </g>
+  <g stroke="#71529A" stroke-width="4" shape-rendering="crispEdges">
+    <path d="M376 48V60M392 48V60M408 48V60M424 48V60M376 128V140M392 128V140M408 128V140M424 128V140M344 70H360M344 86H360M344 102H360M344 118H360M440 70H456M440 86H456M440 102H456M440 118H456"/>
+  </g>
+  <path d="M368 58H432V66H440V122H432V130H368V122H360V66H368Z" fill="#281A40" stroke="#AE8BE7" stroke-width="2"/>
+  <rect x="372" y="70" width="56" height="48" fill="#140F24"/>
+  <g fill="#C6A7FF" shape-rendering="crispEdges">
+    <path d="M380 78h8v8h-8zM412 78h8v8h-8zM396 86h8v16h-8zM388 94h8v8h-8zM404 94h8v8h-8zM380 102h8v8h-8zM412 102h8v8h-8z"/>
+    <path d="M396 78h8v8h-8zM380 94h8v8h-8zM412 94h8v8h-8z" fill="#76539F"/>
+  </g>
+
+  <!-- Matching graph topology establishes the image-to-graph relationship. -->
+  <path d="M564 36V28H588M740 28H764V36M564 144V152H588M740 152H764V144" stroke="#4D3968" stroke-width="2" fill="none"/>
+  <g fill="none" stroke="#A789D3" stroke-width="2">
+    <path d="M664 68V80M664 108V116H624V124M664 116H704V124"/>
+    <path d="M660 76l4 4 4-4M620 120l4 4 4-4M700 120l4 4 4-4"/>
+  </g>
+  <g fill="#2C1E42" stroke="#B79AE6" stroke-width="2">
+    <rect x="634" y="48" width="60" height="20" fill="#63428B" stroke="#E0C9FF"/>
+    <path d="m664 80 22 14-22 14-22-14Z"/>
+    <rect x="600" y="124" width="48" height="16"/>
+    <rect x="680" y="124" width="48" height="16"/>
+  </g>
+  <rect x="628" y="42" width="72" height="32" stroke="#9471C1" fill="none"/>
+  <g fill="#E0C9FF" shape-rendering="crispEdges">
+    <path d="M625 39h6v6h-6zM697 39h6v6h-6zM625 71h6v6h-6zM697 71h6v6h-6z"/>
+  </g>
+
+  <!-- Essential labels only; normal typography remains readable beside pixel geometry. -->
+  <g fill="#DDD0EF" font-family="ui-monospace, 'Cascadia Code', Consolas, monospace" font-size="15" text-anchor="middle">
+    <text x="140" y="188">Screenshot</text>
+    <text x="400" y="188">Local model</text>
+    <text x="664" y="188">Editable diagram</text>
   </g>
 </svg>
