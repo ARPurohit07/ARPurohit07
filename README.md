@@ -1,75 +1,43 @@
-<div align="center">
-
-<img src="./assets/space-banner.svg" alt="Pixel art space banner" width="100%" />
-
-# `ARPurohit07` // ROHAN PUROHIT
-
-### AI/ML · systems · graphics · data
-
-<a href="https://rohan-purohit.vercel.app"><img src="https://img.shields.io/badge/PORTFOLIO-rohan--purohit.vercel.app-8b5cf6?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
-<a href="https://star-map-three.vercel.app"><img src="https://img.shields.io/badge/EXPLORE-Milky_Way_Star_Map-38bdf8?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Galaxy website" /></a>
-<a href="https://github.com/ARPurohit07"><img src="https://img.shields.io/badge/GITHUB-ARPurohit07-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-
-</div>
-
-<br />
-
-```text
-╭──────────────────────────────────────────────────────────────────────╮
-│  > booting rohan.exe                                                │
-│  [████████████████████████████████████████] 100%                    │
-│                                                                      │
-│  I build intelligent systems, immersive interfaces, and tools that  │
-│  make complex ideas feel a little more human.                       │
-╰──────────────────────────────────────────────────────────────────────╯
-```
-
-## `STATUS.LOG`
-
-- Building with **AI, machine learning, data, and graphics**
-- Creator of the [Milky Way Star Map](https://star-map-three.vercel.app), an interactive 3D universe explorer
-- Interested in systems that connect **research, engineering, and visual computing**
-- More work: [rohan-purohit.vercel.app](https://rohan-purohit.vercel.app)
-
-## `TECH_STACK`
-
-<p>
-  <img src="https://img.shields.io/badge/Python-0b1220?style=flat-square&logo=python&logoColor=ffd43b" alt="Python" />
-  <img src="https://img.shields.io/badge/C%2B%2B-0b1220?style=flat-square&logo=c%2B%2B&logoColor=60a5fa" alt="C++" />
-  <img src="https://img.shields.io/badge/JavaScript-0b1220?style=flat-square&logo=javascript&logoColor=facc15" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/React-0b1220?style=flat-square&logo=react&logoColor=61dafb" alt="React" />
-  <img src="https://img.shields.io/badge/Three.js-0b1220?style=flat-square&logo=threedotjs&logoColor=ffffff" alt="Three.js" />
-  <img src="https://img.shields.io/badge/ML%20%2F%20AI-0b1220?style=flat-square&logo=pytorch&logoColor=ee4c2c" alt="Machine learning" />
-  <img src="https://img.shields.io/badge/WebGL-0b1220?style=flat-square&logo=webgl&logoColor=8b5cf6" alt="WebGL" />
+<p align="center">
+  <img src="./assets/banner.svg" width="100%" alt="Rohan Purohit — Software Engineering, AI/ML and Open Source" />
 </p>
 
-## `FEATURED_WORK`
+I'm **Rohan Purohit**, a Computer Science engineer building software across interactive graphics, full-stack applications, and computer vision. I like making complex systems tangible, whether that's a map of the Milky Way or a tool for editing diagrams. I hold a **B.E. in Computer Science** from Thapar Institute of Engineering & Technology.
 
-| Project | What it does |
+[Explore the Galaxy](https://star-map-three.vercel.app) · [Portfolio](https://rohan-purohit.vercel.app)
+
+## Featured projects
+
+### [Milky Way Star Map](https://star-map-three.vercel.app)
+
+An interactive, true-scale 3D map of the Milky Way built with C++, WebGL2, and WebAssembly. Explore observed stars alongside exoplanets, star clusters, nebulae, and black holes; search for objects and travel between them in the browser. [Explore the map](https://star-map-three.vercel.app) · [Source code](https://github.com/ARPurohit07/milky-way-star-map)
+
+`C++` · `WebGL2` · `WebAssembly` · `Astronomical catalogues`
+
+### [GoodFlow](https://github.com/ARPurohit07/GoodFlow)
+
+Convert workflow images into editable diagrams, free and local-first. GoodFlow uses a vision-language model through Ollama to turn PNG/JPG diagrams into graphs you can edit on a canvas or as Mermaid text, then export in multiple formats.
+
+`TypeScript` · `React` · `React Flow` · `FastAPI` · `Ollama` · `Mermaid` · `ELK`
+
+## Experience
+
+**Bayer Pharmaceuticals — Software Development Intern**<br>
+Worked on clinical imaging workflow software, extending the OHIF viewer to help reviewers inspect multiple imaging modalities and timepoints in one workflow. Contributed to review features and bug fixes across React, TypeScript, and related services.
+
+**Bharat Electronics Limited — Computer Vision Intern**<br>
+Worked on a drone-detection prototype using Faster R-CNN with a ResNet-50 backbone in PyTorch, including image preparation, bounding-box labels, augmentation, and evaluation.
+
+## Tools and technologies
+
+| Area | Tools |
 | --- | --- |
-| [Milky Way Star Map](https://star-map-three.vercel.app) | A true-scale interactive 3D map of stars, exoplanets, nebulae, and clusters. |
-| [Portfolio](https://rohan-purohit.vercel.app) | A home base for experiments, projects, and things I’m learning. |
+| Languages | C++, Python, TypeScript, JavaScript, SQL |
+| Frontend | React, React Flow, HTML, CSS |
+| Backend | FastAPI, Node.js, REST APIs |
+| Graphics and AI | WebGL2, WebAssembly, PyTorch, Faster R-CNN, vision-language models |
+| Data and tools | PostgreSQL, Docker, Git, Ollama |
 
-## `CURRENT_INTERESTS`
+I'm interested in interactive visualization, open-source developer tools, local-first AI, and computer vision. I'm open to full-time software engineering and relevant AI/ML opportunities in India or remotely from India.
 
-- AI and machine learning
-- C++ systems and simulation
-- WebGL, Three.js, and real-time graphics
-- Data-heavy interfaces and scientific visualization
-- Tools that make complex technical ideas easier to explore
-
-<br />
-
-<div align="center">
-
-```text
-      .       *        .           .        *       .
-  *       .       .        .  *        .       .
-       .       [ signal acquired ]       .
-  ────────────────────────────────────────────────
-        keep exploring · keep building · keep shipping
-```
-
-**Thanks for stopping by.**
-
-</div>
+[Portfolio](https://rohan-purohit.vercel.app) · [GitHub](https://github.com/ARPurohit07)

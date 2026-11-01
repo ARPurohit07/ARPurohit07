@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 420" width="1600" height="420" role="img" aria-labelledby="title desc">
+  <title id="title">Rohan Purohit — Software Engineering, AI/ML and Open Source</title>
+  <desc id="desc">Rohan's name and software engineering tagline beside a restrained pixel star field, orbital paths and connected astronomical points.</desc>
+  <rect width="1600" height="420" fill="#0B1020"/>
+  <path d="M90 65H1510M90 355H1510" stroke="#334155" stroke-opacity=".38"/>
+  <path d="M90 65v18m0 254v18m1420-290v18m0 254v18" stroke="#38BDF8" stroke-opacity=".55" stroke-width="2"/>
+  <g fill="none" stroke="#334155" stroke-width="2">
+    <ellipse cx="1240" cy="210" rx="292" ry="105" transform="rotate(-18 1240 210)"/>
+    <ellipse cx="1240" cy="210" rx="226" ry="68" transform="rotate(25 1240 210)"/>
+    <circle cx="1240" cy="210" r="94" stroke-dasharray="4 9"/>
+    <path d="M974 271 1084 154 1172 190 1309 102 1410 196 1490 145" stroke="#A78BFA" stroke-opacity=".55"/>
+  </g>
+  <g fill="#38BDF8">
+    <circle cx="974" cy="271" r="4"/><circle cx="1084" cy="154" r="5"/><circle cx="1172" cy="190" r="4"/>
+    <circle cx="1309" cy="102" r="5"/><circle cx="1410" cy="196" r="4"/><circle cx="1490" cy="145" r="4"/>
+  </g>
+  <circle cx="1240" cy="210" r="42" fill="#111B2F" stroke="#A78BFA" stroke-width="2"/>
+  <path d="M1226 200h28v5h-28zm-8 10h44v5h-44zm8 10h28v5h-28z" fill="#A78BFA" opacity=".8"/>
+  <g fill="#CBD5E1">
+    <rect x="955" y="104" width="5" height="5"/><rect x="1040" y="286" width="4" height="4"/>
+    <rect x="1110" y="91" width="3" height="3"/><rect x="1370" y="83" width="4" height="4"/>
+    <rect x="1460" y="286" width="5" height="5"/><rect x="1340" y="313" width="3" height="3"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="92" y="176" fill="#F8FAFC" font-size="76" font-weight="700" letter-spacing="-2">Rohan Purohit</text>
+    <text x="96" y="231" fill="#CBD5E1" font-size="27" font-weight="500">Software Engineering · AI/ML · Open Source</text>
+    <text x="96" y="286" fill="#38BDF8" font-size="23">Building practical software and local-first AI tools.</text>
+  </g>
+</svg>
