@@ -4,9 +4,12 @@
 
 I'm **Rohan Purohit**, a Computer Science engineer building software across interactive graphics, full-stack applications, and computer vision. I like making complex systems tangible, whether that's a map of the Milky Way or a tool for editing diagrams. I hold a **B.E. in Computer Science** from Thapar Institute of Engineering & Technology.
 
-[Explore the Galaxy](https://star-map-three.vercel.app) · [Portfolio](https://rohan-purohit.vercel.app)
+<p>
+  <a href="https://star-map-three.vercel.app"><img src="./assets/galaxy-flair.svg" height="32" alt="Explore the Galaxy" /></a>
+  <a href="https://rohan-purohit.vercel.app"><img src="./assets/portfolio-flair.svg" height="32" alt="View portfolio" /></a>
+</p>
 
-## Featured projects
+## ✦ Featured projects
 
 ### [Milky Way Star Map](https://star-map-three.vercel.app)
 
@@ -18,19 +21,13 @@ An interactive, true-scale 3D map of the Milky Way built with C++, WebGL2, and W
 
 ### [GoodFlow](https://github.com/ARPurohit07/GoodFlow)
 
+<a href="https://github.com/ARPurohit07/GoodFlow"><img src="./assets/goodflow-card.svg" width="800" alt="Colorful diagram nodes transforming an image into an editable flowchart; opens GoodFlow" /></a>
+
 Convert workflow images into editable diagrams, free and local-first. GoodFlow uses a vision-language model through Ollama to turn PNG/JPG diagrams into graphs you can edit on a canvas or as Mermaid text, then export in multiple formats.
 
 `TypeScript` · `React` · `React Flow` · `FastAPI` · `Ollama` · `Mermaid` · `ELK`
 
-## Experience
-
-**Bayer Pharmaceuticals — Software Development Intern**<br>
-Worked on clinical imaging workflow software, extending the OHIF viewer to help reviewers inspect multiple imaging modalities and timepoints in one workflow. Contributed to review features and bug fixes across React, TypeScript, and related services.
-
-**Bharat Electronics Limited — Computer Vision Intern**<br>
-Worked on a drone-detection prototype using Faster R-CNN with a ResNet-50 backbone in PyTorch, including image preparation, bounding-box labels, augmentation, and evaluation.
-
-## Tools and technologies
+## ◇ Tools and technologies
 
 | Area | Tools |
 | --- | --- |
@@ -39,6 +36,8 @@ Worked on a drone-detection prototype using Faster R-CNN with a ResNet-50 backbo
 | Backend | FastAPI, Node.js, REST APIs |
 | Graphics and AI | WebGL2, WebAssembly, PyTorch, Faster R-CNN, vision-language models |
 | Data and tools | PostgreSQL, Docker, Git, Ollama |
+
+## ⟡ Current focus
 
 I'm interested in interactive visualization, open-source developer tools, local-first AI, and computer vision. I'm open to full-time software engineering and relevant AI/ML opportunities in India or remotely from India.
 

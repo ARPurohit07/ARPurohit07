@@ -41,18 +41,18 @@ def ship(draw, x, y, frame):
 def planet(draw, frame):
     cx, cy, radius = 306, 64, 39
     # Chunked rings stay behind the planet.
-    draw.ellipse((cx - 58, cy - 19, cx + 58, cy + 19), outline="#334155", width=3)
+    draw.ellipse((cx - 58, cy - 19, cx + 58, cy + 19), outline="#2DD4BF", width=3)
     draw.ellipse((cx - radius, cy - radius, cx + radius, cy + radius), fill="#32235C")
     draw.ellipse((cx - radius + 4, cy - radius + 4, cx + radius - 4, cy + radius - 4), fill="#6D4BB0")
     draw.polygon([(cx - 29, cy - 8), (cx - 7, cy - 15), (cx + 22, cy - 8),
-                  (cx + 27, cy), (cx - 7, cy - 2)], fill="#A78BFA")
+                  (cx + 27, cy), (cx - 7, cy - 2)], fill="#D8B4FE")
     draw.polygon([(cx - 28, cy + 12), (cx + 3, cy + 7), (cx + 29, cy + 14),
                   (cx + 18, cy + 25), (cx - 18, cy + 25)], fill="#4C3486")
     # Tiny surface highlights shift by a few pixels across the loop.
     offset = int(3 * sin(frame * 2 * pi / FRAMES))
     draw.rectangle((cx - 10 + offset, cy - 24, cx + 3 + offset, cy - 22), fill="#C4B5FD")
     draw.rectangle((cx + 13 - offset, cy + 6, cx + 22 - offset, cy + 8), fill="#C4B5FD")
-    draw.arc((cx - radius, cy - radius, cx + radius, cy + radius), 210, 350, fill="#C4B5FD", width=2)
+    draw.arc((cx - radius, cy - radius, cx + radius, cy + radius), 210, 350, fill="#F59E0B", width=2)
 
 
 images = []
