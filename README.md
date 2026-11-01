@@ -10,6 +10,8 @@ I'm **Rohan Purohit**, a Computer Science engineer building software across inte
 
 ### [Milky Way Star Map](https://star-map-three.vercel.app)
 
+<a href="https://star-map-three.vercel.app"><img src="./assets/galaxy-sprite.gif" width="800" alt="Animated pixel-art ship flying past stars and a violet planet; opens the Milky Way Star Map" /></a>
+
 An interactive, true-scale 3D map of the Milky Way built with C++, WebGL2, and WebAssembly. Explore observed stars alongside exoplanets, star clusters, nebulae, and black holes; search for objects and travel between them in the browser. [Explore the map](https://star-map-three.vercel.app) · [Source code](https://github.com/ARPurohit07/milky-way-star-map)
 
 `C++` · `WebGL2` · `WebAssembly` · `Astronomical catalogues`
