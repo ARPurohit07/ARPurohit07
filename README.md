@@ -1,44 +1,38 @@
-<p align="center">
-  <img src="./assets/banner.svg" width="100%" alt="Rohan Purohit — Software Engineering, AI/ML and Open Source" />
-</p>
+<img src="./assets/profile-hero.svg" width="100%" alt="Rohan Purohit — Software Engineer, Applied AI and Computer Vision" />
 
-I'm **Rohan Purohit**, a Computer Science engineer building software across interactive graphics, full-stack applications, and computer vision. I like making complex systems tangible, whether that's a map of the Milky Way or a tool for editing diagrams. I hold a **B.E. in Computer Science** from Thapar Institute of Engineering & Technology.
+I build practical software and local-first AI tools, with a focus on making complex workflows and data easier to use.
 
 <p>
-  <a href="https://star-map-three.vercel.app"><img src="./assets/galaxy-flair.svg" height="32" alt="Explore the Galaxy" /></a>
-  <a href="https://rohan-purohit.vercel.app"><img src="./assets/portfolio-flair.svg" height="32" alt="View portfolio" /></a>
+  <a href="https://rohan-purohit.vercel.app"><img src="https://img.shields.io/badge/Portfolio-Visit-2DD4BF?style=for-the-badge&labelColor=111827" alt="Visit portfolio" /></a>
+  <a href="https://github.com/ARPurohit07/GoodFlow"><img src="https://img.shields.io/badge/GoodFlow-Repository-2DD4BF?style=for-the-badge&labelColor=111827" alt="View GoodFlow repository" /></a>
+  <a href="https://star-map-three.vercel.app"><img src="https://img.shields.io/badge/Galaxy-Explore-2DD4BF?style=for-the-badge&labelColor=111827" alt="Explore Milky Way Star Map" /></a>
 </p>
 
-## ✦ Featured projects
-
-### [Milky Way Star Map](https://star-map-three.vercel.app)
-
-<a href="https://star-map-three.vercel.app"><img src="./assets/galaxy-sprite.gif" width="800" alt="Animated pixel-art ship flying past stars and a violet planet; opens the Milky Way Star Map" /></a>
-
-An interactive, true-scale 3D map of the Milky Way built with C++, WebGL2, and WebAssembly. Explore observed stars alongside exoplanets, star clusters, nebulae, and black holes; search for objects and travel between them in the browser. [Explore the map](https://star-map-three.vercel.app) · [Source code](https://github.com/ARPurohit07/milky-way-star-map)
-
-`C++` · `WebGL2` · `WebAssembly` · `Astronomical catalogues`
+## Featured work
 
 ### [GoodFlow](https://github.com/ARPurohit07/GoodFlow)
 
-<a href="https://github.com/ARPurohit07/GoodFlow"><img src="./assets/goodflow-card.svg" width="800" alt="Colorful diagram nodes transforming an image into an editable flowchart; opens GoodFlow" /></a>
+GoodFlow turns workflow images into editable diagrams with a local vision-language model. Edit the graph visually or as Mermaid, then export it. Built with React, TypeScript, FastAPI, Ollama, and Qwen2.5-VL.
 
-Convert workflow images into editable diagrams, free and local-first. GoodFlow uses a vision-language model through Ollama to turn PNG/JPG diagrams into graphs you can edit on a canvas or as Mermaid text, then export in multiple formats.
+<a href="https://github.com/ARPurohit07/GoodFlow"><img src="./assets/goodflow-card.svg" width="800" alt="Workflow image passing through a local model into connected, editable nodes" /></a>
 
-`TypeScript` · `React` · `React Flow` · `FastAPI` · `Ollama` · `Mermaid` · `ELK`
+### [Milky Way Star Map](https://star-map-three.vercel.app)
 
-## ◇ Tools and technologies
+Explore the Milky Way in a true-scale 3D browser map built with C++, WebGL2, and WebAssembly. The map draws on astronomical catalogues for stars, exoplanets, nebulae, and clusters.
 
-| Area | Tools |
-| --- | --- |
-| Languages | C++, Python, TypeScript, JavaScript, SQL |
-| Frontend | React, React Flow, HTML, CSS |
-| Backend | FastAPI, Node.js, REST APIs |
-| Graphics and AI | WebGL2, WebAssembly, PyTorch, Faster R-CNN, vision-language models |
-| Data and tools | PostgreSQL, Docker, Git, Ollama |
+<a href="https://star-map-three.vercel.app"><img src="./assets/galaxy-sprite.gif" width="480" alt="Animated pixel ship crossing a star field beside a ringed planet; open the Milky Way Star Map" /></a>
 
-## ⟡ Current focus
+[Explore the map](https://star-map-three.vercel.app) · [Source code](https://github.com/ARPurohit07/milky-way-star-map)
 
-I'm interested in interactive visualization, open-source developer tools, local-first AI, and computer vision. I'm open to full-time software engineering and relevant AI/ML opportunities in India or remotely from India.
+## Technologies
 
-[Portfolio](https://rohan-purohit.vercel.app) · [GitHub](https://github.com/ARPurohit07)
+**Languages**<br>
+<img src="https://skillicons.dev/icons?i=cpp,py,ts,js" height="42" alt="C++, Python, TypeScript, JavaScript" />
+
+**Frameworks and UI**<br>
+<img src="https://skillicons.dev/icons?i=react,nodejs,fastapi" height="42" alt="React, Node.js, FastAPI" />
+
+**AI and developer tools**<br>
+<img src="https://skillicons.dev/icons?i=pytorch,postgres,docker,git" height="42" alt="PyTorch, PostgreSQL, Docker, Git" />
+
+B.E. in Computer Science. Open to software engineering and applied AI opportunities. [Explore my work](https://rohan-purohit.vercel.app).

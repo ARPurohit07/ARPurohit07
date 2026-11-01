@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 187 32" width="187" height="32" role="img" aria-labelledby="t">
-  <title id="t">View portfolio</title>
-  <rect width="187" height="32" rx="7" fill="#0C3A47"/>
-  <rect x="1" y="1" width="185" height="30" rx="6" fill="none" stroke="#2DD4BF" stroke-width="2"/>
-  <path d="m17 11 5 5-5 5m9 0h7" fill="none" stroke="#2DD4BF" stroke-width="2"/>
-  <text x="44" y="22" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#F8FAFC">PORTFOLIO</text>
-  <path d="m166 12 5 4-5 4" fill="none" stroke="#2DD4BF" stroke-width="2"/>
-</svg>
