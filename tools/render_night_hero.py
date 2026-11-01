@@ -6,7 +6,7 @@ Requires Pillow. There is deliberately no text in the artwork.
 from math import cos, pi, sin
 from pathlib import Path
 from random import Random
-from PIL import Image, ImageDraw, ImageChops
+from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[1]
 W, H, N = 400, 150, 48
@@ -48,6 +48,8 @@ def landscape():
                (180,75),(207,83),(244,57),(279,85),(304,68),(340,92),(374,74),(400,90),(400,120),(0,120)],fill='#3F315B')
     d.polygon([(49,73),(68,56),(87,76),(73,67),(68,69),(64,64)],fill='#76628F')
     d.polygon([(227,73),(244,57),(262,74),(249,67),(244,70),(240,65)],fill='#76628F')
+    d.line([(68,57),(62,65),(57,69),(53,75)],fill='#A397B6')
+    d.line([(244,58),(238,67),(233,71)],fill='#A397B6')
     d.polygon([(0,95),(40,88),(77,98),(107,82),(145,100),(179,91),(217,102),
                (256,86),(295,102),(330,89),(368,100),(400,91),(400,120),(0,120)],fill='#251D3D')
     for x in range(0,405,9):
@@ -56,6 +58,8 @@ def landscape():
     # Lake and distant shoreline.
     d.rectangle((0,106,400,137),fill='#131426')
     d.line((0,106,400,106),fill='#514165')
+    d.line((106,107,177,107),fill='#332840')
+    d.line((207,108,263,108),fill='#332840')
     for x,y,l in [(15,111,24),(137,110,37),(233,117,27),(175,128,48),(32,124,28),(341,113,37)]:
         d.line((x,y,x+l,y),fill='#28223D')
 
@@ -67,12 +71,18 @@ def landscape():
     d.rectangle((57,99,62,105),fill='#E5B786')
     d.line((59,99,59,105),fill='#694D57')
     d.rectangle((61,88,64,93),fill='#302132')
+    d.line((43,110,51,110),fill='#67505E')
+    d.line((56,112,62,112),fill='#59424E')
+    d.line((49,115,59,115),fill='#3D303F')
 
     # Foreground bank: all silhouettes have clear, stepped pixel outlines.
     d.polygon([(0,124),(24,126),(47,130),(66,133),(97,131),(126,138),(163,140),
                (199,138),(228,134),(265,132),(285,125),(308,124),(319,120),
                (337,119),(348,124),(371,120),(400,118),(400,150),(0,150)],fill='#080A17')
     d.line([(265,132),(285,125),(308,124),(319,120),(337,119),(348,124)],fill='#665078',width=1)
+    d.line([(281,127),(292,126),(298,126)],fill='#A396B4')
+    d.line([(332,121),(339,122),(343,124)],fill='#A396B4')
+    d.line([(298,128),(307,127),(310,129)],fill='#30263F')
     for x,y,size in [(10,132,52),(24,135,37),(389,130,57),(373,133,39)]:
         tree(d,x,y,size,'#080A17')
     for x,y in [(31,139),(81,140),(183,147),(272,143),(354,137)]:
@@ -82,12 +92,13 @@ def landscape():
 
 
 base = landscape()
+sky_colors = {(11,11,33)} | {(15+k*3,13+k*2,37+k*5) for k in range(7)}
 frames = []
 for frame in range(N):
     im = base.copy()
     d = ImageDraw.Draw(im)
     for x,y,phase,large in STARS:
-        if 65<x<102 and 14<y<50:
+        if base.getpixel((x,y)) not in sky_colors:
             continue
         value = (cos((frame+phase)*2*pi/N)+1)/2
         color = '#E4DDF9' if value>.86 else '#9A87C1' if value>.42 else '#4D416B'
@@ -97,22 +108,25 @@ for frame in range(N):
             d.line((x,y-1,x,y+1),fill=color)
 
     # Slow shimmer beneath the moon, never a full-screen flash.
-    for j in range(7):
-        y = 109+j*3
-        x = 82 + round(sin(frame*2*pi/N+j)*3)
-        half = 3+j
+    for j,(y,offset,half) in enumerate([(109,-1,3),(112,2,5),(115,-4,4),(118,1,7),
+                                      (122,-3,6),(126,4,9),(130,-1,8)]):
+        x = 82 + offset + round(sin(frame*2*pi/N+j)*2)
         shade = '#514267' if (frame//8+j)%3 else '#75618B'
-        d.line((x-half,y,x+half,y),fill=shade)
+        d.line((x-half,y,x-2,y),fill=shade)
+        d.line((x+1,y,x+half//2,y),fill=shade)
+        d.point((x+half,y+1),fill='#3D324E')
 
     # A seated stargazer in a pale hoodie, looking left over the lake.
-    d.rectangle((319,109,326,117),fill='#81709C')
-    d.rectangle((319,107,325,111),fill='#C4B5DD')
-    d.rectangle((317,102,324,108),fill='#E0D7EF')
-    d.rectangle((316,104,319,107),fill='#A996BD')
-    d.rectangle((317,102,322,103),fill='#F1E9FA')
-    d.rectangle((315,114,322,118),fill='#50475E')
-    d.rectangle((315,118,318,121),fill='#8E7BA4')
-    d.rectangle((323,118,327,120),fill='#8E7BA4')
+    d.rectangle((320,108,326,115),fill='#81709C')
+    d.rectangle((319,108,324,111),fill='#B5A7CB')
+    d.polygon([(318,101),(322,101),(324,103),(324,107),(319,108),(317,106),(317,103)],fill='#BAACD0')
+    d.line((319,101,322,101),fill='#DFD5EC')
+    d.rectangle((317,104,319,106),fill='#6E597D')
+    d.line([(320,111),(317,113),(315,113)],fill='#C4B5DD')
+    d.polygon([(319,114),(325,115),(324,118),(319,117),(316,115),(314,116),(314,120),(312,120),(312,114),(315,112)],fill='#625771')
+    d.line([(314,113),(317,114),(320,116)],fill='#A89ABB')
+    d.rectangle((312,120,316,121),fill='#A89ABB')
+    d.rectangle((321,118,325,120),fill='#8E7BA4')
     # Scarf tips move only a pixel or two, preserving the quiet scene.
     scarf_y = 109 + (1 if sin(frame*2*pi/N)>0 else 0)
     d.rectangle((324,108,328,110),fill='#A78BFA')
