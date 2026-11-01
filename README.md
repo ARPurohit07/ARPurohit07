@@ -1,38 +1,45 @@
-<img src="./assets/profile-hero.svg" width="100%" alt="Rohan Purohit — Software Engineer, Applied AI and Computer Vision" />
+<img src="./assets/profile-hero.gif" width="100%" alt="Rohan Purohit above a slowly rotating purple spiral galaxy" />
 
-I build practical software and local-first AI tools, with a focus on making complex workflows and data easier to use.
+Software engineer working across interactive graphics, applied AI, and computer vision.
 
 <p>
-  <a href="https://rohan-purohit.vercel.app"><img src="https://img.shields.io/badge/Portfolio-Visit-2DD4BF?style=for-the-badge&labelColor=111827" alt="Visit portfolio" /></a>
-  <a href="https://github.com/ARPurohit07/GoodFlow"><img src="https://img.shields.io/badge/GoodFlow-Repository-2DD4BF?style=for-the-badge&labelColor=111827" alt="View GoodFlow repository" /></a>
-  <a href="https://star-map-three.vercel.app"><img src="https://img.shields.io/badge/Galaxy-Explore-2DD4BF?style=for-the-badge&labelColor=111827" alt="Explore Milky Way Star Map" /></a>
+  <a href="https://rohan-purohit.vercel.app"><img src="https://img.shields.io/badge/Portfolio-Visit-6D28D9?style=for-the-badge&labelColor=111827" alt="Visit portfolio" /></a>
+  <a href="https://star-map-three.vercel.app"><img src="https://img.shields.io/badge/Galaxy-Explore-6D28D9?style=for-the-badge&labelColor=111827" alt="Explore Milky Way Star Map" /></a>
 </p>
 
 ## Featured work
 
-### [GoodFlow](https://github.com/ARPurohit07/GoodFlow)
-
-GoodFlow turns workflow images into editable diagrams with a local vision-language model. Edit the graph visually or as Mermaid, then export it. Built with React, TypeScript, FastAPI, Ollama, and Qwen2.5-VL.
-
-<a href="https://github.com/ARPurohit07/GoodFlow"><img src="./assets/goodflow-card.svg" width="800" alt="Workflow image passing through a local model into connected, editable nodes" /></a>
-
 ### [Milky Way Star Map](https://star-map-three.vercel.app)
 
-Explore the Milky Way in a true-scale 3D browser map built with C++, WebGL2, and WebAssembly. The map draws on astronomical catalogues for stars, exoplanets, nebulae, and clusters.
+<a href="https://star-map-three.vercel.app"><img src="./assets/galaxy-sprite.gif" width="100%" alt="Animated pixel ship crossing a star field beside a ringed planet; open the Milky Way Star Map" /></a>
 
-<a href="https://star-map-three.vercel.app"><img src="./assets/galaxy-sprite.gif" width="480" alt="Animated pixel ship crossing a star field beside a ringed planet; open the Milky Way Star Map" /></a>
+Explore stars, exoplanets, nebulae, and clusters in a true-scale 3D map of the Milky Way. Built with **C++, WebGL2, and WebAssembly** using astronomical catalogues.
 
 [Explore the map](https://star-map-three.vercel.app) · [Source code](https://github.com/ARPurohit07/milky-way-star-map)
 
+### [GoodFlow](https://github.com/ARPurohit07/GoodFlow)
+
+<a href="https://github.com/ARPurohit07/GoodFlow"><img src="./assets/goodflow-card.svg" width="100%" alt="A workflow image becomes an editable graph through a local vision-language model" /></a>
+
+Turn workflow images into editable diagrams using a local vision-language model. Edit on the canvas or in Mermaid, then export. Built with **React, TypeScript, FastAPI, and Ollama**.
+
+[View repository](https://github.com/ARPurohit07/GoodFlow)
+
 ## Technologies
 
-**Languages**<br>
-<img src="https://skillicons.dev/icons?i=cpp,py,ts,js" height="42" alt="C++, Python, TypeScript, JavaScript" />
-
-**Frameworks and UI**<br>
-<img src="https://skillicons.dev/icons?i=react,nodejs,fastapi" height="42" alt="React, Node.js, FastAPI" />
-
-**AI and developer tools**<br>
-<img src="https://skillicons.dev/icons?i=pytorch,postgres,docker,git" height="42" alt="PyTorch, PostgreSQL, Docker, Git" />
+<p>
+  <img src="https://skillicons.dev/icons?i=cpp" width="40" height="40" alt="C++" />
+  <img src="https://skillicons.dev/icons?i=py" width="40" height="40" alt="Python" />
+  <img src="https://skillicons.dev/icons?i=ts" width="40" height="40" alt="TypeScript" />
+  <img src="https://skillicons.dev/icons?i=js" width="40" height="40" alt="JavaScript" />
+  <img src="https://skillicons.dev/icons?i=react" width="40" height="40" alt="React" />
+  <img src="https://skillicons.dev/icons?i=nodejs" width="40" height="40" alt="Node.js" />
+  <img src="https://skillicons.dev/icons?i=fastapi" width="40" height="40" alt="FastAPI" />
+  <br>
+  <img src="https://skillicons.dev/icons?i=pytorch" width="40" height="40" alt="PyTorch" />
+  <img src="https://skillicons.dev/icons?i=postgres" width="40" height="40" alt="PostgreSQL" />
+  <img src="https://skillicons.dev/icons?i=docker" width="40" height="40" alt="Docker" />
+  <img src="https://skillicons.dev/icons?i=git" width="40" height="40" alt="Git" />
+</p>
 
 B.E. in Computer Science. Open to software engineering and applied AI opportunities. [Explore my work](https://rohan-purohit.vercel.app).

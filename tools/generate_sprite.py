@@ -12,9 +12,9 @@ SCALE = 2
 FRAMES = 24
 OUTPUT = Path(__file__).resolve().parents[1] / "assets" / "galaxy-sprite.gif"
 
-BG = "#0B1020"
+BG = "#080610"
 STAR = "#CBD5E1"
-BLUE = "#38BDF8"
+BLUE = "#C4B5FD"
 PURPLE = "#A78BFA"
 
 rng = Random(47)
@@ -41,7 +41,7 @@ def ship(draw, x, y, frame):
 def planet(draw, frame):
     cx, cy, radius = 306, 64, 39
     # Chunked rings stay behind the planet.
-    draw.ellipse((cx - 58, cy - 19, cx + 58, cy + 19), outline="#2DD4BF", width=3)
+    draw.ellipse((cx - 58, cy - 19, cx + 58, cy + 19), outline="#C4B5FD", width=3)
     draw.ellipse((cx - radius, cy - radius, cx + radius, cy + radius), fill="#32235C")
     draw.ellipse((cx - radius + 4, cy - radius + 4, cx + radius - 4, cy + radius - 4), fill="#6D4BB0")
     draw.polygon([(cx - 29, cy - 8), (cx - 7, cy - 15), (cx + 22, cy - 8),
