@@ -32,7 +32,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/galaxy-preview.jpg" width="800" alt="Actual Milky Way Star Map at galaxy scale, showing spiral arms with labels and grid hidden">
+  <img src="./assets/galaxy-sol-view.png" width="800" alt="Milky Way Star Map from Sol in the Orion Spur, looking toward the bright galactic centre with nearby stars and the spatial grid visible">
 </p>
 
 <br>
