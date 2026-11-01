@@ -1,4 +1,4 @@
-<img src="./assets/profile-hero.gif" width="100%" alt="Rohan Purohit above a slowly rotating purple spiral galaxy" />
+<img src="./assets/profile-hero.gif" width="100%" alt="Pixel-art night scene with twinkling stars, a moonlit mountain lake, a small cabin, and a seated stargazer" />
 
 Software engineer working across interactive graphics, applied AI, and computer vision.
 
