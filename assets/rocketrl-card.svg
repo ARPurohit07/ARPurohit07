@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="210" viewBox="0 0 800 210" role="img" aria-labelledby="title desc">
+  <title id="title">RocketRL landing simulation illustration</title>
+  <desc id="desc">A rocket descends toward a circular landing pad; a policy uses simulated state to choose engine and two steering actions.</desc>
+  <rect width="800" height="210" rx="10" fill="#100e20"/>
+  <text x="27" y="29" fill="#bda8ee" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="2">ROCKETRL / LEARNED LANDING</text>
+  <g fill="#8c77af"><circle cx="41" cy="65" r="1.5"/><circle cx="119" cy="47" r="1"/><circle cx="194" cy="78" r="1"/><circle cx="285" cy="51" r="1"/><circle cx="333" cy="99" r="1"/></g>
+  <path d="M20 175H382" stroke="#584470" stroke-width="2"/>
+  <ellipse cx="210" cy="175" rx="81" ry="13" fill="#231a39" stroke="#b394ec" stroke-width="2"/>
+  <ellipse cx="210" cy="175" rx="48" ry="6" fill="none" stroke="#745c9e" stroke-width="1.5"/>
+  <g id="rocket" transform="translate(210 90)">
+    <path d="M0-47C-13-34-18-9-17 22h34C18-9 13-34 0-47Z" fill="#c9b1ed" stroke="#f3eaff" stroke-width="2"/>
+    <path d="M-17 4-31 23h14m34-19 14 19H17" fill="#755c9b" stroke="#d6c1f6" stroke-width="2"/>
+    <circle cx="0" cy="-12" r="7" fill="#30234d" stroke="#f0ddff" stroke-width="2"/>
+    <path d="M-13 22-17 36m30-14 4 14" stroke="#d6c1f6" stroke-width="3"/>
+    <g id="flame"><path d="M-8 25 0 48 8 25" fill="#e7a878"/><path d="M-4 27 0 39 4 27" fill="#fff0ca"/></g>
+  </g>
+  <path d="M210 142v19" stroke="#9477bf" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <path d="M393 50v111" stroke="#302743"/>
+  <g font-family="Arial,Helvetica,sans-serif">
+    <text x="426" y="75" fill="#a99abf" font-size="12" letter-spacing="1">SIMULATED STATE</text>
+    <text x="426" y="97" fill="#eadfff" font-size="16">position · velocity · attitude</text>
+    <path d="M426 112h324" stroke="#49385f"/>
+    <text x="426" y="137" fill="#a99abf" font-size="12" letter-spacing="1">PPO POLICY ACTIONS</text>
+    <text x="426" y="160" fill="#eadfff" font-size="16">engine · X steering · Y steering</text>
+    <text x="426" y="189" fill="#9183a9" font-size="11">Illustration of the control loop, not a simulation capture.</text>
+  </g>
+</svg>

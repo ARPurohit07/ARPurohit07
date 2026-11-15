@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="112" viewBox="0 0 800 112" role="img" aria-labelledby="title desc">
+  <title id="title">Rohan Purohit</title>
+  <desc id="desc">Nameplate beneath the animated night sky.</desc>
+  <rect width="800" height="112" fill="#0d1117"/>
+  <path d="M110 17h580M110 101h580" stroke="#665086" stroke-width="1"/>
+  <path d="M389 17h22M389 101h22" stroke="#c8a8ff" stroke-width="3"/>
+  <text x="400" y="73" text-anchor="middle" fill="#f2ecff" font-family="Arial,Helvetica,sans-serif" font-size="43" font-weight="700" letter-spacing="6">ROHAN PUROHIT</text>
+</svg>

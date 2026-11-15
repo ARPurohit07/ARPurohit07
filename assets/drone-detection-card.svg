@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200" role="img" aria-labelledby="title desc">
+  <title id="title">Drone detection and origin analysis pipeline</title>
+  <desc id="desc">An image goes to two separate Faster R-CNN detectors. Binary drone boxes are paired by overlap with 18-class country boxes to return ranked airframe origin candidates.</desc>
+  <rect width="800" height="200" rx="10" fill="#100e20"/>
+  <text x="27" y="29" fill="#bda8ee" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="2">COMPUTER VISION / TWO DETECTORS</text>
+  <g font-family="Arial,Helvetica,sans-serif">
+    <rect x="27" y="54" width="133" height="106" rx="7" fill="#1c1730" stroke="#544268"/>
+    <path d="M43 137h101M43 125c20-7 38-4 56-1 18-8 31-6 45-2" fill="none" stroke="#4b4263" stroke-width="2"/>
+    <path d="M74 94h41m-21-11v24m-11-17-8-8m29 8 8-8m-29 19-8 8m29-8 8 8" stroke="#d6c1f6" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="76" cy="80" r="4" fill="#8b73b1"/><circle cx="114" cy="80" r="4" fill="#8b73b1"/><circle cx="76" cy="109" r="4" fill="#8b73b1"/><circle cx="114" cy="109" r="4" fill="#8b73b1"/>
+    <rect x="64" y="69" width="61" height="51" fill="none" stroke="#c6a7ff" stroke-width="2"/>
+    <text x="43" y="151" fill="#a99abf" font-size="11">INPUT IMAGE</text>
+    <rect x="218" y="52" width="191" height="48" rx="7" fill="#241b3a" stroke="#8b72b3"/>
+    <text x="234" y="72" fill="#bca8d6" font-size="11">BINARY FASTER R-CNN</text>
+    <text x="234" y="90" fill="#f1e7ff" font-size="15" font-weight="700">Drone boxes + scores</text>
+    <rect x="218" y="113" width="191" height="48" rx="7" fill="#241b3a" stroke="#8b72b3"/>
+    <text x="234" y="133" fill="#bca8d6" font-size="11">18-CLASS FASTER R-CNN</text>
+    <text x="234" y="151" fill="#f1e7ff" font-size="15" font-weight="700">Country boxes + scores</text>
+    <rect x="466" y="73" width="112" height="66" rx="7" fill="#241b3a" stroke="#aa8bd8"/>
+    <text x="522" y="97" text-anchor="middle" fill="#f1e7ff" font-size="15" font-weight="700">Pair boxes</text>
+    <text x="522" y="117" text-anchor="middle" fill="#bca8d6" font-size="12">by overlap</text>
+    <rect x="634" y="73" width="139" height="66" rx="7" fill="#2d2044" stroke="#ad8ee3"/>
+    <text x="703" y="96" text-anchor="middle" fill="#f1e7ff" font-size="14" font-weight="700">Ranked origin</text>
+    <text x="703" y="116" text-anchor="middle" fill="#c8b4df" font-size="12">candidates</text>
+  </g>
+  <g fill="none" stroke="#a78bfa" stroke-width="2">
+    <path d="M160 106h28V76h18m-6-5 6 5-6 5M188 106v31h18m-6-5 6 5-6 5M409 76h30v30h15m-6-5 6 5-6 5M409 137h30v-31M578 106h44m-6-5 6 5-6 5"/>
+  </g>
+  <text x="27" y="184" fill="#8f83a6" font-family="Arial,Helvetica,sans-serif" font-size="11">Origin means airframe design or manufacture; scores are ranking aids, not calibrated probabilities.</text>
+</svg>

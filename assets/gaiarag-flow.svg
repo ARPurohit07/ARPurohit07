@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="190" viewBox="0 0 800 190" role="img" aria-labelledby="title desc">
+  <title id="title">GaiaRAG evidence flow</title>
+  <desc id="desc">A question goes through catalogue and document retrieval, then deterministic verification, producing a grounded answer or abstaining.</desc>
+  <rect width="800" height="190" rx="10" fill="#100e20"/>
+  <path d="M0 48H800M0 144H800" stroke="#302743"/>
+  <text x="28" y="29" fill="#bda8ee" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing="2">GAIARAG / EVIDENCE PATH</text>
+  <g font-family="Arial,Helvetica,sans-serif" text-anchor="middle">
+    <rect x="28" y="69" width="130" height="56" rx="7" fill="#211936" stroke="#7962a9"/>
+    <text x="93" y="93" fill="#f3eaff" font-size="16" font-weight="700">Question</text>
+    <text x="93" y="111" fill="#a99dbb" font-size="11">about the stars</text>
+    <rect x="211" y="61" width="157" height="35" rx="6" fill="#251c3c" stroke="#7e69a8"/>
+    <text x="289" y="83" fill="#eaddff" font-size="13">Catalogue rows · SQL</text>
+    <rect x="211" y="104" width="157" height="35" rx="6" fill="#251c3c" stroke="#7e69a8"/>
+    <text x="289" y="126" fill="#eaddff" font-size="13">Source documents</text>
+    <rect x="422" y="69" width="158" height="56" rx="7" fill="#211936" stroke="#a78bfa"/>
+    <text x="501" y="93" fill="#f3eaff" font-size="15" font-weight="700">Verify</text>
+    <text x="501" y="111" fill="#bfb3cf" font-size="11">numbers + provenance</text>
+    <rect x="634" y="69" width="138" height="56" rx="7" fill="#2d2044" stroke="#b99cfa"/>
+    <text x="703" y="93" fill="#f3eaff" font-size="15" font-weight="700">Answer</text>
+    <text x="703" y="111" fill="#c6b7d9" font-size="11">or abstain</text>
+  </g>
+  <g fill="none" stroke="#a78bfa" stroke-width="2">
+    <path d="M158 97H192m-6-5 6 5-6 5M368 79h23v18h12m-6-5 6 5-6 5M368 121h23V97M580 97h35m-6-5 6 5-6 5"/>
+  </g>
+  <text x="28" y="169" fill="#8f83a6" font-family="Arial,Helvetica,sans-serif" font-size="11">Local inference · traceable facts · explicit uncertainty</text>
+</svg>
